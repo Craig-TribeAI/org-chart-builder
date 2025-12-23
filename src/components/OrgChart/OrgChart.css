@@ -1,0 +1,80 @@
+.org-chart-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc;
+}
+
+.org-chart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.org-chart-empty p {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin: 0.5rem 0;
+}
+
+.org-chart-empty .hint {
+  font-size: 0.875rem;
+  color: #94A3B8;
+}
+
+/* Override ReactFlow default styles */
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__edge-path {
+  stroke: #94A3B8;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3B82F6;
+  stroke-width: 3;
+}
+
+.react-flow__controls {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.react-flow__controls-button {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #f8fafc;
+}
+
+.react-flow__controls-button svg {
+  fill: #475569;
+}
+
+.react-flow__minimap {
+  border: 1px solid #e2e8f0;
+}
+
+/* Connection line while dragging */
+.react-flow__connection-path {
+  stroke: #3B82F6;
+  stroke-width: 2;
+}
+
+/* Handle when connecting */
+.react-flow__handle-connecting {
+  background-color: #3B82F6;
+}
+
+.react-flow__handle-valid {
+  background-color: #10B981;
+}

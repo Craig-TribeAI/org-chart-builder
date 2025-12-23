@@ -1,0 +1,31 @@
+.file-upload {
+  display: inline-block;
+}
+
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.upload-button:hover {
+  background-color: #2563EB;
+}
+
+.upload-button.loading {
+  background-color: #94A3B8;
+  cursor: not-allowed;
+}
+
+.upload-button svg {
+  flex-shrink: 0;
+}

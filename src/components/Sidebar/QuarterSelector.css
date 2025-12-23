@@ -1,0 +1,54 @@
+.quarter-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.quarter-selector label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.quarter-dropdown {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: white;
+  color: #1e293b;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.quarter-dropdown:hover {
+  border-color: #94a3b8;
+}
+
+.quarter-dropdown:focus {
+  outline: none;
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.quarter-info {
+  display: flex;
+  justify-content: center;
+}
+
+.quarter-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  background-color: #eff6ff;
+  color: #3B82F6;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+}

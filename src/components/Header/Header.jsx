@@ -1,0 +1,128 @@
+import { Users, Calendar, Download, RotateCcw, Upload } from 'lucide-react';
+import FileUpload from './FileUpload';
+import { useOrgChartStore } from '../../stores/orgChartStore';
+import './Header.css';
+
+function Header() {
+  const {
+    csvFileName,
+    personNodes,
+    selectedQuarter,
+    isLoading,
+    loadCSV,
+    exportToJSON,
+    importFromJSON,
+    error
+  } = useOrgChartStore();
+
+  const handleExport = () => {
+    const data = useOrgChartStore.getState().exportToJSON();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `org-chart-${selectedQuarter}-${new Date().toISOString().split('T')[0]}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleClearCache = () => {
+    if (confirm('Clear all cached data and reload CSV? This will reset all manager assignments.')) {
+      console.log('🗑️  Manually clearing localStorage...');
+      localStorage.clear();
+      console.log('✅ localStorage cleared. Reloading page...');
+      window.location.reload();
+    }
+  };
+
+  const handleImport = () => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      try {
+        const text = await file.text();
+        const jsonData = JSON.parse(text);
+
+        const success = importFromJSON(jsonData);
+        if (success) {
+          alert('Data imported successfully!');
+        } else {
+          alert('Failed to import data. Please check the file format.');
+        }
+      } catch (error) {
+        console.error('Import error:', error);
+        alert('Failed to import data: ' + error.message);
+      }
+    };
+    input.click();
+  };
+
+  return (
+    <header className="app-header">
+      <div className="header-content">
+        <div className="header-left">
+          <h1>Org Chart Builder</h1>
+          <span className="header-subtitle">2026 Growth Planning</span>
+        </div>
+
+        <div className="header-center">
+          {csvFileName && (
+            <>
+              <div className="header-info">
+                <Users size={16} />
+                <span>{personNodes.length} people</span>
+              </div>
+              <div className="header-divider"></div>
+              <div className="header-info">
+                <Calendar size={16} />
+                <span>{selectedQuarter}</span>
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="header-right">
+          <FileUpload onFileSelect={loadCSV} isLoading={isLoading} />
+
+          {csvFileName && (
+            <>
+              <button className="import-button" onClick={handleImport} title="Import saved data">
+                <Upload size={18} />
+                <span>Import</span>
+              </button>
+
+              <button className="export-button" onClick={handleExport}>
+                <Download size={18} />
+                <span>Export</span>
+              </button>
+
+              <button
+                className="clear-cache-button"
+                onClick={handleClearCache}
+                title="Clear cache and reload CSV"
+              >
+                <RotateCcw size={18} />
+                <span>Clear Cache</span>
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+
+      {error && (
+        <div className="header-error">
+          <span>{error}</span>
+          <button onClick={() => useOrgChartStore.getState().clearError()}>✕</button>
+        </div>
+      )}
+    </header>
+  );
+}
+
+export default Header;
