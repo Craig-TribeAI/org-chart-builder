@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Login from './components/Login/Login';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import OrgChart from './components/OrgChart/OrgChart';
@@ -6,26 +7,43 @@ import { useOrgChartStore } from './stores/orgChartStore';
 import './App.css';
 
 function App() {
-  const { csvFileName, loadCSV, isLoading } = useOrgChartStore();
+  const { csvFileName, importFromJSON, isLoading } = useOrgChartStore();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Auto-load CSV on mount if not already loaded
+  // Check if user is already authenticated
   useEffect(() => {
-    const loadDefaultCSV = async () => {
+    const authStatus = sessionStorage.getItem('isAuthenticated');
+    if (authStatus === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  // Auto-load default JSON on mount if not already loaded
+  useEffect(() => {
+    const loadDefaultData = async () => {
       // Only load if we don't already have data
       if (!csvFileName) {
         try {
-          const response = await fetch('/headcount-data.csv');
-          const blob = await response.blob();
-          const file = new File([blob], 'headcount-data.csv', { type: 'text/csv' });
-          await loadCSV(file);
+          const response = await fetch('/org-chart-import.json');
+          const jsonData = await response.json();
+          importFromJSON(jsonData);
         } catch (error) {
-          console.error('Failed to load default CSV:', error);
+          console.error('Failed to load default data:', error);
         }
       }
     };
 
-    loadDefaultCSV();
-  }, [csvFileName, loadCSV]);
+    loadDefaultData();
+  }, [csvFileName, importFromJSON]);
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+  };
+
+  // Show login page if not authenticated
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} />;
+  }
 
   return (
     <div className="app">
@@ -38,7 +56,7 @@ function App() {
           {isLoading ? (
             <div className="welcome">
               <h2>Loading...</h2>
-              <p>Parsing CSV data...</p>
+              <p>Loading org chart data...</p>
             </div>
           ) : csvFileName ? (
             <OrgChart />

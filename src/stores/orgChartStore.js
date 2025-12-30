@@ -37,14 +37,15 @@ export const useOrgChartStore = create(
       departments: [],
       roleTemplates: [],
       personNodes: [],
-      selectedQuarter: 'Q1',
+      managerAssignments: {}, // Canonical source: { personId: managerId } - persists across quarter switches
+      selectedQuarter: 'Q4',
       nodes: [], // ReactFlow nodes
       edges: [], // ReactFlow edges
       csvFileName: null,
       lastSaved: null,
       isLoading: false,
       error: null,
-      dataVersion: 4, // Increment this to force re-parse
+      dataVersion: 7, // Increment this to force re-parse
       collapsedNodes: new Set(), // Track which nodes are collapsed
 
       // Actions
@@ -101,21 +102,72 @@ export const useOrgChartStore = create(
        * Set the selected quarter and expand roles accordingly
        */
       setSelectedQuarter: (quarter) => {
-        const { roleTemplates } = get();
-        const personNodes = expandRoleTemplates(roleTemplates, quarter);
+        const { roleTemplates, managerAssignments } = get();
 
-        // Preserve existing manager assignments if the person still exists
-        const oldPersonNodes = get().personNodes;
-        personNodes.forEach(newNode => {
-          const oldNode = oldPersonNodes.find(n => n.id === newNode.id);
-          if (oldNode && oldNode.managerId) {
-            // Only preserve if manager also exists in new quarter
-            const managerExists = personNodes.some(n => n.id === oldNode.managerId);
-            if (managerExists) {
-              newNode.managerId = oldNode.managerId;
-            }
+        // Get all manager IDs from canonical assignments (this never gets corrupted)
+        const referencedManagerIds = [...new Set(Object.values(managerAssignments).filter(Boolean))];
+
+        // Expand with manager IDs so future managers appear as placeholders
+        let personNodes = expandRoleTemplates(roleTemplates, quarter, referencedManagerIds);
+
+        // Apply manager assignments from canonical source
+        personNodes.forEach(node => {
+          if (managerAssignments[node.id]) {
+            node.managerId = managerAssignments[node.id];
           }
         });
+
+        // Ensure all referenced managers exist as placeholders
+        const existingIds = new Set(personNodes.map(n => n.id));
+
+        // Recursively create placeholders for missing managers
+        let iterations = 0;
+        while (iterations < 10) {
+          const missingManagers = new Set();
+          personNodes.forEach(node => {
+            if (node.managerId && !existingIds.has(node.managerId)) {
+              missingManagers.add(node.managerId);
+            }
+          });
+
+          if (missingManagers.size === 0) break;
+
+          missingManagers.forEach(managerId => {
+            const match = managerId.match(/^(role-\d+)-person-(\d+)$/);
+            if (match) {
+              const templateId = match[0].replace(/-person-\d+$/, '');
+              const template = roleTemplates.find(t => t.id === templateId);
+              if (template) {
+                const startQuarter = ['Q1', 'Q2', 'Q3', 'Q4'].find(q => template.quarters[q] > 0);
+
+                personNodes.push({
+                  id: managerId,
+                  templateId: template.id,
+                  roleName: template.cleanName,
+                  displayName: template.cleanName,
+                  department: template.department,
+                  departmentId: template.departmentId,
+                  managerId: managerAssignments[managerId] || null,
+                  position: { x: 0, y: 0 },
+                  activeInQuarters: Object.entries(template.quarters)
+                    .filter(([q, count]) => count > 0)
+                    .map(([q]) => q),
+                  startQuarter,
+                  isFutureRole: true,
+                  metadata: {
+                    originalRoleName: template.originalName,
+                    costPerRole: template.costPerRole,
+                    instanceNumber: 1,
+                    totalInstances: 1,
+                    templateMetadata: template.metadata
+                  }
+                });
+                existingIds.add(managerId);
+              }
+            }
+          });
+          iterations++;
+        }
 
         set({
           selectedQuarter: quarter,
@@ -164,7 +216,7 @@ export const useOrgChartStore = create(
        * Set manager for a person node
        */
       setManager: (personId, managerId, skipRebuild = false) => {
-        const { personNodes } = get();
+        const { personNodes, managerAssignments } = get();
 
         // Validate: prevent circular references
         if (managerId && wouldCreateCircular(personId, managerId, personNodes)) {
@@ -172,11 +224,20 @@ export const useOrgChartStore = create(
           return false;
         }
 
+        // Update the canonical manager assignments
+        const newAssignments = { ...managerAssignments };
+        if (managerId) {
+          newAssignments[personId] = managerId;
+        } else {
+          delete newAssignments[personId];
+        }
+
         // Update the person node
         set(state => ({
           personNodes: state.personNodes.map(node =>
             node.id === personId ? { ...node, managerId } : node
           ),
+          managerAssignments: newAssignments,
           error: null
         }));
 
@@ -190,7 +251,7 @@ export const useOrgChartStore = create(
        * Bulk set manager for multiple people
        */
       bulkSetManager: (personIds, managerId) => {
-        const { personNodes } = get();
+        const { personNodes, managerAssignments } = get();
         let failedCount = 0;
 
         // Validate all assignments first
@@ -199,6 +260,18 @@ export const useOrgChartStore = create(
             failedCount++;
           }
         }
+
+        // Build new manager assignments
+        const newAssignments = { ...managerAssignments };
+        personIds.forEach(personId => {
+          if (!managerId || !wouldCreateCircular(personId, managerId, personNodes)) {
+            if (managerId) {
+              newAssignments[personId] = managerId;
+            } else {
+              delete newAssignments[personId];
+            }
+          }
+        });
 
         // Update all person nodes at once
         set(state => ({
@@ -212,6 +285,7 @@ export const useOrgChartStore = create(
             }
             return node;
           }),
+          managerAssignments: newAssignments,
           error: failedCount > 0 ? `${failedCount} assignment(s) skipped due to circular reference` : null
         }));
 
@@ -223,10 +297,15 @@ export const useOrgChartStore = create(
        * Remove manager assignment
        */
       removeManager: (personId) => {
+        const { managerAssignments } = get();
+        const newAssignments = { ...managerAssignments };
+        delete newAssignments[personId];
+
         set(state => ({
           personNodes: state.personNodes.map(node =>
             node.id === personId ? { ...node, managerId: null } : node
-          )
+          ),
+          managerAssignments: newAssignments
         }));
         get().rebuildChart();
       },
@@ -235,10 +314,15 @@ export const useOrgChartStore = create(
        * Bulk remove manager for multiple people
        */
       bulkRemoveManager: (personIds) => {
+        const { managerAssignments } = get();
+        const newAssignments = { ...managerAssignments };
+        personIds.forEach(id => delete newAssignments[id]);
+
         set(state => ({
           personNodes: state.personNodes.map(node =>
             personIds.includes(node.id) ? { ...node, managerId: null } : node
-          )
+          ),
+          managerAssignments: newAssignments
         }));
         get().rebuildChart();
       },
@@ -258,7 +342,14 @@ export const useOrgChartStore = create(
        * Rebuild ReactFlow nodes and edges
        */
       rebuildChart: () => {
-        const { personNodes, departments, collapsedNodes } = get();
+        const { personNodes, departments } = get();
+        let { collapsedNodes } = get();
+
+        // Ensure collapsedNodes is a Set (might be array from localStorage)
+        if (!(collapsedNodes instanceof Set)) {
+          collapsedNodes = new Set(Array.isArray(collapsedNodes) ? collapsedNodes : []);
+          set({ collapsedNodes });
+        }
 
         // Helper function to check if a person should be visible
         const isPersonVisible = (person) => {
@@ -314,7 +405,10 @@ export const useOrgChartStore = create(
         });
 
         // Build ReactFlow edges (only for visible people)
+        // Group direct reports by manager and role to reduce edge clutter
         const edges = [];
+        const edgesCreated = new Set(); // Track which manager-role combos have edges
+
         visiblePersonNodes.forEach(person => {
           if (person.managerId) {
             // Only create edge if manager also exists and is visible
@@ -323,18 +417,30 @@ export const useOrgChartStore = create(
               const manager = personNodes.find(n => n.id === person.managerId);
               const isCrossDepartment = manager?.departmentId !== person.departmentId;
 
-              edges.push({
-                id: `edge-${person.managerId}-${person.id}`,
-                source: person.managerId,
-                target: person.id,
-                type: 'smoothstep',
-                animated: false,
-                style: {
-                  stroke: isCrossDepartment ? '#EF4444' : '#94A3B8',
-                  strokeWidth: 2,
-                  strokeDasharray: isCrossDepartment ? '5,5' : undefined
-                }
-              });
+              // Check if this person is a manager (has direct reports)
+              const isPersonManager = personNodes.some(n => n.managerId === person.id);
+
+              // For leaf nodes (non-managers), only show one edge per role group
+              const roleKey = person.templateId || person.id;
+              const edgeKey = `${person.managerId}-${roleKey}`;
+
+              // Always show edges to managers, only show first edge per role for leaves
+              if (isPersonManager || !edgesCreated.has(edgeKey)) {
+                edgesCreated.add(edgeKey);
+
+                edges.push({
+                  id: `edge-${person.managerId}-${person.id}`,
+                  source: person.managerId,
+                  target: person.id,
+                  type: 'bezier',
+                  animated: false,
+                  style: {
+                    stroke: isCrossDepartment ? '#EF4444' : '#94A3B8',
+                    strokeWidth: 1.5,
+                    strokeDasharray: isCrossDepartment ? '5,5' : undefined
+                  }
+                });
+              }
             }
           }
         });
@@ -355,7 +461,8 @@ export const useOrgChartStore = create(
           personNodes: state.personNodes.map(node => ({
             ...node,
             managerId: null
-          }))
+          })),
+          managerAssignments: {}
         }));
         get().rebuildChart();
       },
@@ -389,10 +496,19 @@ export const useOrgChartStore = create(
        */
       importFromJSON: (jsonData) => {
         try {
+          // Build managerAssignments from personNodes
+          const managerAssignments = {};
+          jsonData.personNodes.forEach(node => {
+            if (node.managerId) {
+              managerAssignments[node.id] = node.managerId;
+            }
+          });
+
           set({
             departments: jsonData.departments,
             roleTemplates: jsonData.roleTemplates,
             personNodes: jsonData.personNodes,
+            managerAssignments,
             selectedQuarter: jsonData.selectedQuarter,
             csvFileName: jsonData.csvFileName,
             collapsedNodes: jsonData.collapsedNodes ? new Set(jsonData.collapsedNodes) : new Set(),
@@ -470,7 +586,8 @@ export const useOrgChartStore = create(
        * Delete a person node (only custom roles)
        */
       deletePersonNode: (personId) => {
-        const person = get().personNodes.find(p => p.id === personId);
+        const { personNodes, managerAssignments } = get();
+        const person = personNodes.find(p => p.id === personId);
 
         if (!person) {
           set({ error: 'Person not found' });
@@ -482,11 +599,21 @@ export const useOrgChartStore = create(
           return false;
         }
 
+        // Update managerAssignments: remove this person and anyone who has them as manager
+        const newAssignments = { ...managerAssignments };
+        delete newAssignments[personId];
+        Object.keys(newAssignments).forEach(key => {
+          if (newAssignments[key] === personId) {
+            delete newAssignments[key];
+          }
+        });
+
         // Remove the person and any references to them as manager
         set(state => ({
           personNodes: state.personNodes
             .filter(p => p.id !== personId)
-            .map(p => p.managerId === personId ? { ...p, managerId: null } : p)
+            .map(p => p.managerId === personId ? { ...p, managerId: null } : p),
+          managerAssignments: newAssignments
         }));
 
         get().rebuildChart();
@@ -495,11 +622,22 @@ export const useOrgChartStore = create(
     }),
     {
       name: 'org-chart-storage',
-      version: 4, // Increment to clear old cached data
+      version: 7, // Increment to clear old cached data and add managerAssignments
+      onRehydrateStorage: () => (state) => {
+        // After rehydrating from localStorage, rebuild the chart
+        // This ensures nodes/edges are populated on initial load
+        if (state && state.personNodes && state.personNodes.length > 0) {
+          // Use setTimeout to ensure the store is fully initialized
+          setTimeout(() => {
+            state.rebuildChart();
+          }, 0);
+        }
+      },
       partialize: (state) => ({
         departments: state.departments,
         roleTemplates: state.roleTemplates,
         personNodes: state.personNodes,
+        managerAssignments: state.managerAssignments,
         selectedQuarter: state.selectedQuarter,
         csvFileName: state.csvFileName,
         lastSaved: state.lastSaved,
@@ -507,18 +645,19 @@ export const useOrgChartStore = create(
         collapsedNodes: Array.from(state.collapsedNodes) // Convert Set to Array for serialization
       }),
       migrate: (persistedState, version) => {
-        console.log(`🔄 Store migration: old version=${version}, new version=4`);
+        console.log(`🔄 Store migration: old version=${version}, new version=7`);
         // If the version changed, clear the data to force re-parse
-        if (version < 4) {
-          console.log('🗑️  Clearing old cached data to force fresh CSV parse with correct row exclusions');
+        if (version < 7) {
+          console.log('🗑️  Clearing old cached data to load fresh default JSON');
           return {
             departments: [],
             roleTemplates: [],
             personNodes: [],
-            selectedQuarter: 'Q1',
+            managerAssignments: {},
+            selectedQuarter: 'Q4',
             csvFileName: null,
             lastSaved: null,
-            dataVersion: 4,
+            dataVersion: 7,
             collapsedNodes: []
           };
         }
@@ -527,6 +666,10 @@ export const useOrgChartStore = create(
           persistedState.collapsedNodes = new Set(persistedState.collapsedNodes);
         } else {
           persistedState.collapsedNodes = new Set();
+        }
+        // Ensure managerAssignments exists
+        if (!persistedState.managerAssignments) {
+          persistedState.managerAssignments = {};
         }
         return persistedState;
       }

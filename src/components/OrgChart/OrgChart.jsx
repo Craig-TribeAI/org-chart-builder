@@ -4,8 +4,7 @@ import ReactFlow, {
   Controls,
   MiniMap,
   useNodesState,
-  useEdgesState,
-  MarkerType
+  useEdgesState
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 
@@ -83,15 +82,9 @@ function OrgChart() {
         minZoom={0.05}
         maxZoom={2}
         defaultEdgeOptions={{
-          type: 'smoothstep',
+          type: 'bezier',
           animated: false,
-          style: { strokeWidth: 2 },
-          markerEnd: {
-            type: MarkerType.ArrowClosed,
-            width: 20,
-            height: 20,
-            color: '#94A3B8'
-          }
+          style: { strokeWidth: 1.5 }
         }}
         proOptions={{ hideAttribution: true }}
       >

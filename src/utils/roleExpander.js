@@ -1,11 +1,26 @@
 /**
+ * Determine the first quarter a role starts (has headcount > 0)
+ * @param {Object} quarters - Object with Q1, Q2, Q3, Q4 counts
+ * @returns {string} The start quarter ('Q1', 'Q2', 'Q3', 'Q4') or null
+ */
+function getStartQuarter(quarters) {
+  const quarterOrder = ['Q1', 'Q2', 'Q3', 'Q4'];
+  for (const q of quarterOrder) {
+    if (quarters[q] > 0) return q;
+  }
+  return null;
+}
+
+/**
  * Expand role templates into individual person nodes based on headcount
  * @param {Array} roleTemplates - Array of role template objects
  * @param {string} quarter - Quarter to expand for ('Q1', 'Q2', 'Q3', 'Q4', or 'Full Year')
+ * @param {Array} existingManagerIds - Optional array of manager IDs that need placeholders
  * @returns {Array} Array of person node objects
  */
-export function expandRoleTemplates(roleTemplates, quarter) {
+export function expandRoleTemplates(roleTemplates, quarter, existingManagerIds = []) {
   const personNodes = [];
+  const createdIds = new Set();
 
   roleTemplates.forEach(template => {
     let headcount;
@@ -23,19 +38,44 @@ export function expandRoleTemplates(roleTemplates, quarter) {
       headcount = template.quarters[quarter] || 0;
     }
 
-    // Skip if no headcount for this quarter
-    if (headcount === 0) return;
-
     // Determine which quarters this person is active in (for Full Year view)
     const activeInQuarters = [];
     Object.entries(template.quarters).forEach(([q, count]) => {
       if (count > 0) activeInQuarters.push(q);
     });
 
+    // Calculate start quarter for this role
+    const startQuarter = getStartQuarter(template.quarters);
+
+    // Check if this role is "future" (not yet active in current quarter)
+    const quarterOrder = ['Q1', 'Q2', 'Q3', 'Q4'];
+    const currentQIdx = quarterOrder.indexOf(quarter);
+    const startQIdx = quarterOrder.indexOf(startQuarter);
+    const isFutureRole = quarter !== 'Full Year' && startQIdx > currentQIdx;
+
+    // Skip if no headcount for this quarter AND not needed as a manager placeholder
+    if (headcount === 0) {
+      // Check if any instance of this template is needed as a manager
+      const neededAsManager = existingManagerIds.some(id => id && id.startsWith(template.id));
+      if (!neededAsManager) return;
+
+      // Create placeholder for future manager (use Q4 headcount as guide)
+      headcount = Math.max(1, template.quarters.Q4 || 1);
+    }
+
     // Create individual person nodes
     for (let i = 0; i < headcount; i++) {
+      const nodeId = `${template.id}-person-${i}`;
+
+      // Check if this specific node is needed as a manager placeholder
+      const isNeededAsManager = existingManagerIds.includes(nodeId);
+      const isCurrentlyActive = template.quarters[quarter] > i;
+
+      // Skip if not active and not needed as manager
+      if (!isCurrentlyActive && !isNeededAsManager && quarter !== 'Full Year') continue;
+
       const personNode = {
-        id: `${template.id}-person-${i}`,
+        id: nodeId,
         templateId: template.id,
         roleName: template.cleanName,
         displayName: headcount > 1 ? `${template.cleanName} ${i + 1}` : template.cleanName,
@@ -44,6 +84,8 @@ export function expandRoleTemplates(roleTemplates, quarter) {
         managerId: null, // Will be set through UI
         position: { x: 0, y: 0 }, // Will be calculated by layout engine
         activeInQuarters,
+        startQuarter,
+        isFutureRole: !isCurrentlyActive && isNeededAsManager,
         metadata: {
           originalRoleName: template.originalName,
           costPerRole: template.costPerRole,
@@ -54,6 +96,7 @@ export function expandRoleTemplates(roleTemplates, quarter) {
       };
 
       personNodes.push(personNode);
+      createdIds.add(nodeId);
     }
   });
 

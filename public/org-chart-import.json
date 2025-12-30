@@ -1,0 +1,6210 @@
+{
+  "version": 1,
+  "exportDate": "2025-12-30T15:54:53.627Z",
+  "csvFileName": "headcount-data.csv",
+  "selectedQuarter": "Q4",
+  "departments": [
+    {
+      "id": "dept-0",
+      "name": "Execs",
+      "displayName": "Execs",
+      "color": "#3B82F6",
+      "startRow": 17,
+      "endRow": 21,
+      "order": 0
+    },
+    {
+      "id": "dept-1",
+      "name": "Sales",
+      "displayName": "Sales",
+      "color": "#10B981",
+      "startRow": 23,
+      "endRow": 31,
+      "order": 1
+    },
+    {
+      "id": "dept-2",
+      "name": "Delivery",
+      "displayName": "Delivery",
+      "color": "#F59E0B",
+      "startRow": 33,
+      "endRow": 46,
+      "order": 2
+    },
+    {
+      "id": "dept-3",
+      "name": "Partnerships + Marketing",
+      "displayName": "Partnerships + Marketing",
+      "color": "#EC4899",
+      "startRow": 48,
+      "endRow": 57,
+      "order": 3
+    },
+    {
+      "id": "dept-4",
+      "name": "Product + Eng - Foundry",
+      "displayName": "Product + Eng - Foundry",
+      "color": "#8B5CF6",
+      "startRow": 59,
+      "endRow": 69,
+      "order": 4
+    },
+    {
+      "id": "dept-5",
+      "name": "Ops / Other",
+      "displayName": "Ops / Other",
+      "color": "#6B7280",
+      "startRow": 71,
+      "endRow": 78,
+      "order": 5
+    }
+  ],
+  "roleTemplates": [
+    {
+      "id": "role-18",
+      "originalName": "Jackie",
+      "cleanName": "Jackie",
+      "department": "Execs",
+      "departmentId": "dept-0",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 18,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-19",
+      "originalName": "Noah",
+      "cleanName": "Noah",
+      "department": "Execs",
+      "departmentId": "dept-0",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 19,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-24",
+      "originalName": "Head of Sales",
+      "cleanName": "Head of Sales",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$420,000",
+      "metadata": {
+        "rowIndex": 24,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-25",
+      "originalName": "Sales Manager*",
+      "cleanName": "Sales Manager",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 4,
+        "Q3": 4,
+        "Q4": 5
+      },
+      "costPerRole": "$380,000",
+      "metadata": {
+        "rowIndex": 25,
+        "hasAsterisk": true,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-26",
+      "originalName": "GMs*",
+      "cleanName": "GMs",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 13,
+        "Q2": 19,
+        "Q3": 23,
+        "Q4": 27
+      },
+      "costPerRole": "$350,000",
+      "metadata": {
+        "rowIndex": 26,
+        "hasAsterisk": true,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-27",
+      "originalName": "SA Managers*",
+      "cleanName": "SA Managers",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$340,000",
+      "metadata": {
+        "rowIndex": 27,
+        "hasAsterisk": true,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-28",
+      "originalName": "SAs*",
+      "cleanName": "SAs",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 5,
+        "Q2": 7,
+        "Q3": 8,
+        "Q4": 9
+      },
+      "costPerRole": "$300,000",
+      "metadata": {
+        "rowIndex": 28,
+        "hasAsterisk": true,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-29",
+      "originalName": "SA Support ",
+      "cleanName": "SA Support",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$100,000",
+      "metadata": {
+        "rowIndex": 29,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-30",
+      "originalName": "Partner + RevOps + Enablement",
+      "cleanName": "Partner + RevOps + Enablement",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$225,000",
+      "metadata": {
+        "rowIndex": 30,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-34",
+      "originalName": "Head of Delivery",
+      "cleanName": "Head of Delivery",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$350,000",
+      "metadata": {
+        "rowIndex": 34,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-36",
+      "originalName": "Head of Product Delivery",
+      "cleanName": "Head of Product Delivery",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 0,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$350,000",
+      "metadata": {
+        "rowIndex": 36,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-37",
+      "originalName": "Head of Technical Delivery",
+      "cleanName": "Head of Technical Delivery",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$350,000",
+      "metadata": {
+        "rowIndex": 37,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-38",
+      "originalName": "AI  Strategists  ",
+      "cleanName": "AI  Strategists",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 6,
+        "Q2": 6,
+        "Q3": 7,
+        "Q4": 8
+      },
+      "costPerRole": "$300,000",
+      "metadata": {
+        "rowIndex": 38,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-39",
+      "originalName": "FTE Product Managers ",
+      "cleanName": "FTE Product Managers",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 12,
+        "Q2": 14,
+        "Q3": 16,
+        "Q4": 18
+      },
+      "costPerRole": "$350,000",
+      "metadata": {
+        "rowIndex": 39,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-40",
+      "originalName": "FTE AI Architects ",
+      "cleanName": "FTE AI Architects",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 11,
+        "Q2": 12,
+        "Q3": 14,
+        "Q4": 16
+      },
+      "costPerRole": "$450,000",
+      "metadata": {
+        "rowIndex": 40,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-41",
+      "originalName": "FTE AI Engineers ",
+      "cleanName": "FTE AI Engineers",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 24,
+        "Q2": 26,
+        "Q3": 29,
+        "Q4": 31
+      },
+      "costPerRole": "$400,000",
+      "metadata": {
+        "rowIndex": 41,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-42",
+      "originalName": "Staffing Leads",
+      "cleanName": "Staffing Leads",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 3
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 42,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-43",
+      "originalName": "Fulfillment Ops",
+      "cleanName": "Fulfillment Ops",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 3
+      },
+      "costPerRole": "$150,000",
+      "metadata": {
+        "rowIndex": 43,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-44",
+      "originalName": "Fulfillment Admin",
+      "cleanName": "Fulfillment Admin",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 3
+      },
+      "costPerRole": "$50,000",
+      "metadata": {
+        "rowIndex": 44,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-45",
+      "originalName": "Community Managers",
+      "cleanName": "Community Managers",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$175,000",
+      "metadata": {
+        "rowIndex": 45,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-49",
+      "originalName": "Head of Partnerships / Marketing",
+      "cleanName": "Head of Partnerships / Marketing",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 49,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-50",
+      "originalName": "Partnerships Leads",
+      "cleanName": "Partnerships Leads",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$200,000",
+      "metadata": {
+        "rowIndex": 50,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-52",
+      "originalName": "Digital Marketing",
+      "cleanName": "Digital Marketing",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "quarters": {
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$175,000",
+      "metadata": {
+        "rowIndex": 52,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-53",
+      "originalName": "Event Marketing",
+      "cleanName": "Event Marketing",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "quarters": {
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 0,
+        "Q4": 1
+      },
+      "costPerRole": "$175,000",
+      "metadata": {
+        "rowIndex": 53,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-54",
+      "originalName": "Marketing Ops",
+      "cleanName": "Marketing Ops",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "quarters": {
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$150,000",
+      "metadata": {
+        "rowIndex": 54,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-55",
+      "originalName": "Graphic Designer",
+      "cleanName": "Graphic Designer",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "quarters": {
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$175,000",
+      "metadata": {
+        "rowIndex": 55,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-60",
+      "originalName": "Product Lead",
+      "cleanName": "Product Lead",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 60,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-61",
+      "originalName": "AI Lead",
+      "cleanName": "AI Lead",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 61,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-62",
+      "originalName": "Eng Lead",
+      "cleanName": "Eng Lead",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 62,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-63",
+      "originalName": "Product Managers",
+      "cleanName": "Product Managers",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$225,000",
+      "metadata": {
+        "rowIndex": 63,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-64",
+      "originalName": "AI Engineers ",
+      "cleanName": "AI Engineers",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 4,
+        "Q3": 6,
+        "Q4": 6
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 64,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-65",
+      "originalName": "Full-stack Engineers ",
+      "cleanName": "Full-stack Engineers",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 2,
+        "Q3": 3,
+        "Q4": 3
+      },
+      "costPerRole": "$200,000",
+      "metadata": {
+        "rowIndex": 65,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-66",
+      "originalName": "DevOps / Security",
+      "cleanName": "DevOps / Security",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$200,000",
+      "metadata": {
+        "rowIndex": 66,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-67",
+      "originalName": "UX Designer",
+      "cleanName": "UX Designer",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$175,000",
+      "metadata": {
+        "rowIndex": 67,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-68",
+      "originalName": "QA",
+      "cleanName": "QA",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$150,000",
+      "metadata": {
+        "rowIndex": 68,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-72",
+      "originalName": "Head of Finance and Operations",
+      "cleanName": "Head of Finance and Operations",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$250,000",
+      "metadata": {
+        "rowIndex": 72,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-73",
+      "originalName": "Finance",
+      "cleanName": "Finance",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "quarters": {
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$200,000",
+      "metadata": {
+        "rowIndex": 73,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-74",
+      "originalName": "Chief of Staff",
+      "cleanName": "Chief of Staff",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$150,000",
+      "metadata": {
+        "rowIndex": 74,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-75",
+      "originalName": "Executive Assistants",
+      "cleanName": "Executive Assistants",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$50,000",
+      "metadata": {
+        "rowIndex": 75,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-76",
+      "originalName": "HR / Recruiting",
+      "cleanName": "HR / Recruiting",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "quarters": {
+        "Q1": 2,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 2
+      },
+      "costPerRole": "$175,000",
+      "metadata": {
+        "rowIndex": 76,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    },
+    {
+      "id": "role-77",
+      "originalName": "IT Ops",
+      "cleanName": "IT Ops",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "quarters": {
+        "Q1": 1,
+        "Q2": 1,
+        "Q3": 1,
+        "Q4": 1
+      },
+      "costPerRole": "$50,000",
+      "metadata": {
+        "rowIndex": 77,
+        "hasAsterisk": false,
+        "hasParentheses": false
+      }
+    }
+  ],
+  "personNodes": [
+    {
+      "id": "role-18-person-0",
+      "templateId": "role-18",
+      "roleName": "Jackie",
+      "displayName": "Jackie",
+      "department": "Execs",
+      "departmentId": "dept-0",
+      "managerId": null,
+      "position": {
+        "x": 3410,
+        "y": 50
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Jackie",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 18,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-19-person-0",
+      "templateId": "role-19",
+      "roleName": "Noah",
+      "displayName": "Noah",
+      "department": "Execs",
+      "departmentId": "dept-0",
+      "managerId": null,
+      "position": {
+        "x": 7750,
+        "y": 50
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Noah",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 19,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-24-person-0",
+      "templateId": "role-24",
+      "roleName": "Head of Sales",
+      "displayName": "Head of Sales",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-18-person-0",
+      "position": {
+        "x": 1010,
+        "y": 190
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Head of Sales",
+        "costPerRole": "$420,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 24,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-25-person-0",
+      "templateId": "role-25",
+      "roleName": "Sales Manager",
+      "displayName": "Sales Manager 1",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 50,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Sales Manager*",
+        "costPerRole": "$380,000",
+        "instanceNumber": 1,
+        "totalInstances": 5,
+        "templateMetadata": {
+          "rowIndex": 25,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-25-person-1",
+      "templateId": "role-25",
+      "roleName": "Sales Manager",
+      "displayName": "Sales Manager 2",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 290,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Sales Manager*",
+        "costPerRole": "$380,000",
+        "instanceNumber": 2,
+        "totalInstances": 5,
+        "templateMetadata": {
+          "rowIndex": 25,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-25-person-2",
+      "templateId": "role-25",
+      "roleName": "Sales Manager",
+      "displayName": "Sales Manager 3",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 530,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Sales Manager*",
+        "costPerRole": "$380,000",
+        "instanceNumber": 3,
+        "totalInstances": 5,
+        "templateMetadata": {
+          "rowIndex": 25,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-25-person-3",
+      "templateId": "role-25",
+      "roleName": "Sales Manager",
+      "displayName": "Sales Manager 4",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 770,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Sales Manager*",
+        "costPerRole": "$380,000",
+        "instanceNumber": 4,
+        "totalInstances": 5,
+        "templateMetadata": {
+          "rowIndex": 25,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-25-person-4",
+      "templateId": "role-25",
+      "roleName": "Sales Manager",
+      "displayName": "Sales Manager 5",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 1010,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Sales Manager*",
+        "costPerRole": "$380,000",
+        "instanceNumber": 5,
+        "totalInstances": 5,
+        "templateMetadata": {
+          "rowIndex": 25,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-0",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 1",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-0",
+      "position": {
+        "x": 50,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 1,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-1",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 2",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-1",
+      "position": {
+        "x": 290,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 2,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-2",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 3",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-2",
+      "position": {
+        "x": 530,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 3,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-3",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 4",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-3",
+      "position": {
+        "x": 770,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 4,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-4",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 5",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-4",
+      "position": {
+        "x": 1010,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 5,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-5",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 6",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-0",
+      "position": {
+        "x": 50,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 6,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-6",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 7",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-1",
+      "position": {
+        "x": 290,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 7,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-7",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 8",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-2",
+      "position": {
+        "x": 530,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 8,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-8",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 9",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-3",
+      "position": {
+        "x": 770,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 9,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-9",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 10",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-4",
+      "position": {
+        "x": 1010,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 10,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-10",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 11",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-0",
+      "position": {
+        "x": 50,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 11,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-11",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 12",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-1",
+      "position": {
+        "x": 290,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 12,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-12",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 13",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-2",
+      "position": {
+        "x": 530,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 13,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-13",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 14",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-3",
+      "position": {
+        "x": 770,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 14,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-14",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 15",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-4",
+      "position": {
+        "x": 1010,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 15,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-15",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 16",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-0",
+      "position": {
+        "x": 50,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 16,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-16",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 17",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-1",
+      "position": {
+        "x": 290,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 17,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-17",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 18",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-2",
+      "position": {
+        "x": 530,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 18,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-18",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 19",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-3",
+      "position": {
+        "x": 770,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 19,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-19",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 20",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-4",
+      "position": {
+        "x": 1010,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 20,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-20",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 21",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-0",
+      "position": {
+        "x": 50,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 21,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-21",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 22",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-1",
+      "position": {
+        "x": 290,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 22,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-22",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 23",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-2",
+      "position": {
+        "x": 530,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 23,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-23",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 24",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-3",
+      "position": {
+        "x": 770,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 24,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-24",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 25",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-4",
+      "position": {
+        "x": 1010,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 25,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-25",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 26",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-0",
+      "position": {
+        "x": 50,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 26,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-26-person-26",
+      "templateId": "role-26",
+      "roleName": "GMs",
+      "displayName": "GMs 27",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-25-person-1",
+      "position": {
+        "x": 290,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "GMs*",
+        "costPerRole": "$350,000",
+        "instanceNumber": 27,
+        "totalInstances": 27,
+        "templateMetadata": {
+          "rowIndex": 26,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-27-person-0",
+      "templateId": "role-27",
+      "roleName": "SA Managers",
+      "displayName": "SA Managers 1",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 1250,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SA Managers*",
+        "costPerRole": "$340,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 27,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-27-person-1",
+      "templateId": "role-27",
+      "roleName": "SA Managers",
+      "displayName": "SA Managers 2",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 1490,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SA Managers*",
+        "costPerRole": "$340,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 27,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-0",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 1",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-0",
+      "position": {
+        "x": 1250,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 1,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-1",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 2",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-1",
+      "position": {
+        "x": 1490,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 2,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-2",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 3",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-0",
+      "position": {
+        "x": 1250,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 3,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-3",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 4",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-1",
+      "position": {
+        "x": 1490,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 4,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-4",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 5",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-0",
+      "position": {
+        "x": 1250,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 5,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-5",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 6",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-1",
+      "position": {
+        "x": 1490,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 6,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-6",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 7",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-0",
+      "position": {
+        "x": 1250,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 7,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-7",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 8",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-1",
+      "position": {
+        "x": 1490,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 8,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-28-person-8",
+      "templateId": "role-28",
+      "roleName": "SAs",
+      "displayName": "SAs 9",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-27-person-0",
+      "position": {
+        "x": 1250,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SAs*",
+        "costPerRole": "$300,000",
+        "instanceNumber": 9,
+        "totalInstances": 9,
+        "templateMetadata": {
+          "rowIndex": 28,
+          "hasAsterisk": true,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-29-person-0",
+      "templateId": "role-29",
+      "roleName": "SA Support",
+      "displayName": "SA Support",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 1730,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "SA Support ",
+        "costPerRole": "$100,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 29,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-30-person-0",
+      "templateId": "role-30",
+      "roleName": "Partner + RevOps + Enablement",
+      "displayName": "Partner + RevOps + Enablement",
+      "department": "Sales",
+      "departmentId": "dept-1",
+      "managerId": "role-24-person-0",
+      "position": {
+        "x": 1970,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Partner + RevOps + Enablement",
+        "costPerRole": "$225,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 30,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-34-person-0",
+      "templateId": "role-34",
+      "roleName": "Head of Delivery",
+      "displayName": "Head of Delivery",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-18-person-0",
+      "position": {
+        "x": 3410,
+        "y": 190
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Head of Delivery",
+        "costPerRole": "$350,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 34,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-36-person-0",
+      "templateId": "role-36",
+      "roleName": "Head of Product Delivery",
+      "displayName": "Head of Product Delivery",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-34-person-0",
+      "position": {
+        "x": 2330,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q2",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Head of Product Delivery",
+        "costPerRole": "$350,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 36,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-37-person-0",
+      "templateId": "role-37",
+      "roleName": "Head of Technical Delivery",
+      "displayName": "Head of Technical Delivery",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-34-person-0",
+      "position": {
+        "x": 2810,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Head of Technical Delivery",
+        "costPerRole": "$350,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 37,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-0",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 1,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-1",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 2,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-2",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 3,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-3",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 4",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 4,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-4",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 5",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 5,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-5",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 6",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 6,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-6",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 7",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 1160
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 7,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-38-person-7",
+      "templateId": "role-38",
+      "roleName": "AI  Strategists",
+      "displayName": "AI  Strategists 8",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2210,
+        "y": 1275
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI  Strategists  ",
+        "costPerRole": "$300,000",
+        "instanceNumber": 8,
+        "totalInstances": 8,
+        "templateMetadata": {
+          "rowIndex": 38,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-0",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 1,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-1",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 2,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-2",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 3,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-3",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 4",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 4,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-4",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 5",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 5,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-5",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 6",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 6,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-6",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 7",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1160
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 7,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-7",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 8",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1275
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 8,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-8",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 9",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1390
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 9,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-9",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 10",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1505
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 10,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-10",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 11",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1620
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 11,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-11",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 12",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1735
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 12,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-12",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 13",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1850
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 13,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-13",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 14",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 1965
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 14,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-14",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 15",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 2080
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 15,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-15",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 16",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 2195
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 16,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-16",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 17",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 2310
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 17,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-39-person-17",
+      "templateId": "role-39",
+      "roleName": "FTE Product Managers",
+      "displayName": "FTE Product Managers 18",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-36-person-0",
+      "position": {
+        "x": 2450,
+        "y": 2425
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE Product Managers ",
+        "costPerRole": "$350,000",
+        "instanceNumber": 18,
+        "totalInstances": 18,
+        "templateMetadata": {
+          "rowIndex": 39,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-0",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 1,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-1",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 2,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-2",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 3,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-3",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 4",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 4,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-4",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 5",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 5,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-5",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 6",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 6,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-6",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 7",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1160
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 7,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-7",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 8",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1275
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 8,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-8",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 9",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1390
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 9,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-9",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 10",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1505
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 10,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-10",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 11",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1620
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 11,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-11",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 12",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1735
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 12,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-12",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 13",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1850
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 13,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-13",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 14",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 1965
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 14,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-14",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 15",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 2080
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 15,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-40-person-15",
+      "templateId": "role-40",
+      "roleName": "FTE AI Architects",
+      "displayName": "FTE AI Architects 16",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2690,
+        "y": 2195
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Architects ",
+        "costPerRole": "$450,000",
+        "instanceNumber": 16,
+        "totalInstances": 16,
+        "templateMetadata": {
+          "rowIndex": 40,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-0",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 1,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-1",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 2,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-2",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 3,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-3",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 4",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 4,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-4",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 5",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 5,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-5",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 6",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 6,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-6",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 7",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1160
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 7,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-7",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 8",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1275
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 8,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-8",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 9",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1390
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 9,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-9",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 10",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1505
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 10,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-10",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 11",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1620
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 11,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-11",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 12",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1735
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 12,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-12",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 13",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1850
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 13,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-13",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 14",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 1965
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 14,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-14",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 15",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2080
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 15,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-15",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 16",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2195
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 16,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-16",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 17",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2310
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 17,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-17",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 18",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2425
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 18,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-18",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 19",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2540
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 19,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-19",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 20",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2655
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 20,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-20",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 21",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2770
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 21,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-21",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 22",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 2885
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 22,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-22",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 23",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3000
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 23,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-23",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 24",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3115
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 24,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-24",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 25",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3230
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 25,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-25",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 26",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3345
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 26,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-26",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 27",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3460
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 27,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-27",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 28",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3575
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 28,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-28",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 29",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3690
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 29,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-29",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 30",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3805
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 30,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-41-person-30",
+      "templateId": "role-41",
+      "roleName": "FTE AI Engineers",
+      "displayName": "FTE AI Engineers 31",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-37-person-0",
+      "position": {
+        "x": 2930,
+        "y": 3920
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "FTE AI Engineers ",
+        "costPerRole": "$400,000",
+        "instanceNumber": 31,
+        "totalInstances": 31,
+        "templateMetadata": {
+          "rowIndex": 41,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-42-person-0",
+      "templateId": "role-42",
+      "roleName": "Staffing Leads",
+      "displayName": "Staffing Leads 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-34-person-0",
+      "position": {
+        "x": 3290,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Staffing Leads",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 42,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-42-person-1",
+      "templateId": "role-42",
+      "roleName": "Staffing Leads",
+      "displayName": "Staffing Leads 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-34-person-0",
+      "position": {
+        "x": 3770,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Staffing Leads",
+        "costPerRole": "$250,000",
+        "instanceNumber": 2,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 42,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-42-person-2",
+      "templateId": "role-42",
+      "roleName": "Staffing Leads",
+      "displayName": "Staffing Leads 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-34-person-0",
+      "position": {
+        "x": 4250,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Staffing Leads",
+        "costPerRole": "$250,000",
+        "instanceNumber": 3,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 42,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-43-person-0",
+      "templateId": "role-43",
+      "roleName": "Fulfillment Ops",
+      "displayName": "Fulfillment Ops 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-42-person-0",
+      "position": {
+        "x": 3170,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Fulfillment Ops",
+        "costPerRole": "$150,000",
+        "instanceNumber": 1,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 43,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-43-person-1",
+      "templateId": "role-43",
+      "roleName": "Fulfillment Ops",
+      "displayName": "Fulfillment Ops 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-42-person-1",
+      "position": {
+        "x": 3650,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Fulfillment Ops",
+        "costPerRole": "$150,000",
+        "instanceNumber": 2,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 43,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-43-person-2",
+      "templateId": "role-43",
+      "roleName": "Fulfillment Ops",
+      "displayName": "Fulfillment Ops 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-42-person-2",
+      "position": {
+        "x": 4130,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Fulfillment Ops",
+        "costPerRole": "$150,000",
+        "instanceNumber": 3,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 43,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-44-person-0",
+      "templateId": "role-44",
+      "roleName": "Fulfillment Admin",
+      "displayName": "Fulfillment Admin 1",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-42-person-0",
+      "position": {
+        "x": 3410,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Fulfillment Admin",
+        "costPerRole": "$50,000",
+        "instanceNumber": 1,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 44,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-44-person-1",
+      "templateId": "role-44",
+      "roleName": "Fulfillment Admin",
+      "displayName": "Fulfillment Admin 2",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-42-person-1",
+      "position": {
+        "x": 3890,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Fulfillment Admin",
+        "costPerRole": "$50,000",
+        "instanceNumber": 2,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 44,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-44-person-2",
+      "templateId": "role-44",
+      "roleName": "Fulfillment Admin",
+      "displayName": "Fulfillment Admin 3",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-42-person-2",
+      "position": {
+        "x": 4370,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Fulfillment Admin",
+        "costPerRole": "$50,000",
+        "instanceNumber": 3,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 44,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-45-person-0",
+      "templateId": "role-45",
+      "roleName": "Community Managers",
+      "displayName": "Community Managers",
+      "department": "Delivery",
+      "departmentId": "dept-2",
+      "managerId": "role-34-person-0",
+      "position": {
+        "x": 4610,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Community Managers",
+        "costPerRole": "$175,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 45,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-49-person-0",
+      "templateId": "role-49",
+      "roleName": "Head of Partnerships / Marketing",
+      "displayName": "Head of Partnerships / Marketing",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-18-person-0",
+      "position": {
+        "x": 5330,
+        "y": 190
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Head of Partnerships / Marketing",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 49,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-50-person-0",
+      "templateId": "role-50",
+      "roleName": "Partnerships Leads",
+      "displayName": "Partnerships Leads 1",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-49-person-0",
+      "position": {
+        "x": 4850,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Partnerships Leads",
+        "costPerRole": "$200,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 50,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-50-person-1",
+      "templateId": "role-50",
+      "roleName": "Partnerships Leads",
+      "displayName": "Partnerships Leads 2",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-49-person-0",
+      "position": {
+        "x": 4850,
+        "y": 445
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Partnerships Leads",
+        "costPerRole": "$200,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 50,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-52-person-0",
+      "templateId": "role-52",
+      "roleName": "Digital Marketing",
+      "displayName": "Digital Marketing",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-49-person-0",
+      "position": {
+        "x": 5090,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q3",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Digital Marketing",
+        "costPerRole": "$175,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 52,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-53-person-0",
+      "templateId": "role-53",
+      "roleName": "Event Marketing",
+      "displayName": "Event Marketing",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-49-person-0",
+      "position": {
+        "x": 5330,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q4"
+      ],
+      "startQuarter": "Q4",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Event Marketing",
+        "costPerRole": "$175,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 53,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-54-person-0",
+      "templateId": "role-54",
+      "roleName": "Marketing Ops",
+      "displayName": "Marketing Ops",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-49-person-0",
+      "position": {
+        "x": 5570,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q3",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Marketing Ops",
+        "costPerRole": "$150,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 54,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-55-person-0",
+      "templateId": "role-55",
+      "roleName": "Graphic Designer",
+      "displayName": "Graphic Designer",
+      "department": "Partnerships + Marketing",
+      "departmentId": "dept-3",
+      "managerId": "role-49-person-0",
+      "position": {
+        "x": 5810,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q3",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Graphic Designer",
+        "costPerRole": "$175,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 55,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-60-person-0",
+      "templateId": "role-60",
+      "roleName": "Product Lead",
+      "displayName": "Product Lead",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-19-person-0",
+      "position": {
+        "x": 7750,
+        "y": 190
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Product Lead",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 60,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-61-person-0",
+      "templateId": "role-61",
+      "roleName": "AI Lead",
+      "displayName": "AI Lead",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-60-person-0",
+      "position": {
+        "x": 7030,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Lead",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 61,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-62-person-0",
+      "templateId": "role-62",
+      "roleName": "Eng Lead",
+      "displayName": "Eng Lead",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-60-person-0",
+      "position": {
+        "x": 7510,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Eng Lead",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 62,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-63-person-0",
+      "templateId": "role-63",
+      "roleName": "Product Managers",
+      "displayName": "Product Managers 1",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-60-person-0",
+      "position": {
+        "x": 7990,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Product Managers",
+        "costPerRole": "$225,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 63,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-63-person-1",
+      "templateId": "role-63",
+      "roleName": "Product Managers",
+      "displayName": "Product Managers 2",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-60-person-0",
+      "position": {
+        "x": 8230,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Product Managers",
+        "costPerRole": "$225,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 63,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-64-person-0",
+      "templateId": "role-64",
+      "roleName": "AI Engineers",
+      "displayName": "AI Engineers 1",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-61-person-0",
+      "position": {
+        "x": 7030,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Engineers ",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 6,
+        "templateMetadata": {
+          "rowIndex": 64,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-64-person-1",
+      "templateId": "role-64",
+      "roleName": "AI Engineers",
+      "displayName": "AI Engineers 2",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-61-person-0",
+      "position": {
+        "x": 7030,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Engineers ",
+        "costPerRole": "$250,000",
+        "instanceNumber": 2,
+        "totalInstances": 6,
+        "templateMetadata": {
+          "rowIndex": 64,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-64-person-2",
+      "templateId": "role-64",
+      "roleName": "AI Engineers",
+      "displayName": "AI Engineers 3",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-61-person-0",
+      "position": {
+        "x": 7030,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Engineers ",
+        "costPerRole": "$250,000",
+        "instanceNumber": 3,
+        "totalInstances": 6,
+        "templateMetadata": {
+          "rowIndex": 64,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-64-person-3",
+      "templateId": "role-64",
+      "roleName": "AI Engineers",
+      "displayName": "AI Engineers 4",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-61-person-0",
+      "position": {
+        "x": 7030,
+        "y": 815
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Engineers ",
+        "costPerRole": "$250,000",
+        "instanceNumber": 4,
+        "totalInstances": 6,
+        "templateMetadata": {
+          "rowIndex": 64,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-64-person-4",
+      "templateId": "role-64",
+      "roleName": "AI Engineers",
+      "displayName": "AI Engineers 5",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-61-person-0",
+      "position": {
+        "x": 7030,
+        "y": 930
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Engineers ",
+        "costPerRole": "$250,000",
+        "instanceNumber": 5,
+        "totalInstances": 6,
+        "templateMetadata": {
+          "rowIndex": 64,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-64-person-5",
+      "templateId": "role-64",
+      "roleName": "AI Engineers",
+      "displayName": "AI Engineers 6",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-61-person-0",
+      "position": {
+        "x": 7030,
+        "y": 1045
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "AI Engineers ",
+        "costPerRole": "$250,000",
+        "instanceNumber": 6,
+        "totalInstances": 6,
+        "templateMetadata": {
+          "rowIndex": 64,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-65-person-0",
+      "templateId": "role-65",
+      "roleName": "Full-stack Engineers",
+      "displayName": "Full-stack Engineers 1",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7270,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Full-stack Engineers ",
+        "costPerRole": "$200,000",
+        "instanceNumber": 1,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 65,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-65-person-1",
+      "templateId": "role-65",
+      "roleName": "Full-stack Engineers",
+      "displayName": "Full-stack Engineers 2",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7270,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Full-stack Engineers ",
+        "costPerRole": "$200,000",
+        "instanceNumber": 2,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 65,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-65-person-2",
+      "templateId": "role-65",
+      "roleName": "Full-stack Engineers",
+      "displayName": "Full-stack Engineers 3",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7270,
+        "y": 700
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Full-stack Engineers ",
+        "costPerRole": "$200,000",
+        "instanceNumber": 3,
+        "totalInstances": 3,
+        "templateMetadata": {
+          "rowIndex": 65,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-66-person-0",
+      "templateId": "role-66",
+      "roleName": "DevOps / Security",
+      "displayName": "DevOps / Security 1",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7510,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "DevOps / Security",
+        "costPerRole": "$200,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 66,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-66-person-1",
+      "templateId": "role-66",
+      "roleName": "DevOps / Security",
+      "displayName": "DevOps / Security 2",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7510,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "DevOps / Security",
+        "costPerRole": "$200,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 66,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-67-person-0",
+      "templateId": "role-67",
+      "roleName": "UX Designer",
+      "displayName": "UX Designer",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-60-person-0",
+      "position": {
+        "x": 8470,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "UX Designer",
+        "costPerRole": "$175,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 67,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-68-person-0",
+      "templateId": "role-68",
+      "roleName": "QA",
+      "displayName": "QA 1",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7750,
+        "y": 470
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "QA",
+        "costPerRole": "$150,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 68,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-68-person-1",
+      "templateId": "role-68",
+      "roleName": "QA",
+      "displayName": "QA 2",
+      "department": "Product + Eng - Foundry",
+      "departmentId": "dept-4",
+      "managerId": "role-62-person-0",
+      "position": {
+        "x": 7750,
+        "y": 585
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "QA",
+        "costPerRole": "$150,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 68,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-72-person-0",
+      "templateId": "role-72",
+      "roleName": "Head of Finance and Operations",
+      "displayName": "Head of Finance and Operations",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-18-person-0",
+      "position": {
+        "x": 6290,
+        "y": 190
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Head of Finance and Operations",
+        "costPerRole": "$250,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 72,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-73-person-0",
+      "templateId": "role-73",
+      "roleName": "Finance",
+      "displayName": "Finance",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-72-person-0",
+      "position": {
+        "x": 6050,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q3",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Finance",
+        "costPerRole": "$200,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 73,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-74-person-0",
+      "templateId": "role-74",
+      "roleName": "Chief of Staff",
+      "displayName": "Chief of Staff",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-18-person-0",
+      "position": {
+        "x": 6770,
+        "y": 190
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Chief of Staff",
+        "costPerRole": "$150,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 74,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-75-person-0",
+      "templateId": "role-75",
+      "roleName": "Executive Assistants",
+      "displayName": "Executive Assistants 1",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-74-person-0",
+      "position": {
+        "x": 6770,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Executive Assistants",
+        "costPerRole": "$50,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 75,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-75-person-1",
+      "templateId": "role-75",
+      "roleName": "Executive Assistants",
+      "displayName": "Executive Assistants 2",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-74-person-0",
+      "position": {
+        "x": 6770,
+        "y": 445
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "Executive Assistants",
+        "costPerRole": "$50,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 75,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-76-person-0",
+      "templateId": "role-76",
+      "roleName": "HR / Recruiting",
+      "displayName": "HR / Recruiting 1",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-72-person-0",
+      "position": {
+        "x": 6290,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "HR / Recruiting",
+        "costPerRole": "$175,000",
+        "instanceNumber": 1,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 76,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-76-person-1",
+      "templateId": "role-76",
+      "roleName": "HR / Recruiting",
+      "displayName": "HR / Recruiting 2",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-72-person-0",
+      "position": {
+        "x": 6290,
+        "y": 445
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "HR / Recruiting",
+        "costPerRole": "$175,000",
+        "instanceNumber": 2,
+        "totalInstances": 2,
+        "templateMetadata": {
+          "rowIndex": 76,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    },
+    {
+      "id": "role-77-person-0",
+      "templateId": "role-77",
+      "roleName": "IT Ops",
+      "displayName": "IT Ops",
+      "department": "Ops / Other",
+      "departmentId": "dept-5",
+      "managerId": "role-72-person-0",
+      "position": {
+        "x": 6530,
+        "y": 330
+      },
+      "activeInQuarters": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "startQuarter": "Q1",
+      "isFutureRole": false,
+      "metadata": {
+        "originalRoleName": "IT Ops",
+        "costPerRole": "$50,000",
+        "instanceNumber": 1,
+        "totalInstances": 1,
+        "templateMetadata": {
+          "rowIndex": 77,
+          "hasAsterisk": false,
+          "hasParentheses": false
+        }
+      }
+    }
+  ],
+  "collapsedNodes": []
+}

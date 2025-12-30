@@ -1,5 +1,4 @@
-import { Users, Calendar, Download, RotateCcw, Upload } from 'lucide-react';
-import FileUpload from './FileUpload';
+import { Users, Calendar, Download, Upload } from 'lucide-react';
 import { useOrgChartStore } from '../../stores/orgChartStore';
 import './Header.css';
 
@@ -8,8 +7,6 @@ function Header() {
     csvFileName,
     personNodes,
     selectedQuarter,
-    isLoading,
-    loadCSV,
     exportToJSON,
     importFromJSON,
     error
@@ -26,15 +23,6 @@ function Header() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-  };
-
-  const handleClearCache = () => {
-    if (confirm('Clear all cached data and reload CSV? This will reset all manager assignments.')) {
-      console.log('🗑️  Manually clearing localStorage...');
-      localStorage.clear();
-      console.log('✅ localStorage cleared. Reloading page...');
-      window.location.reload();
-    }
   };
 
   const handleImport = () => {
@@ -88,8 +76,6 @@ function Header() {
         </div>
 
         <div className="header-right">
-          <FileUpload onFileSelect={loadCSV} isLoading={isLoading} />
-
           {csvFileName && (
             <>
               <button className="import-button" onClick={handleImport} title="Import saved data">
@@ -101,17 +87,9 @@ function Header() {
                 <Download size={18} />
                 <span>Export</span>
               </button>
-
-              <button
-                className="clear-cache-button"
-                onClick={handleClearCache}
-                title="Clear cache and reload CSV"
-              >
-                <RotateCcw size={18} />
-                <span>Clear Cache</span>
-              </button>
             </>
           )}
+
         </div>
       </div>
 

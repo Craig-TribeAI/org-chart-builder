@@ -105,9 +105,6 @@ function ManagerAssignment() {
         <div className="header-title">
           <Users size={16} />
           <span>Manager Assignments</span>
-          {unassignedPeople.length > 0 && (
-            <span className="unassigned-badge">{unassignedPeople.length} unassigned</span>
-          )}
         </div>
         {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </div>

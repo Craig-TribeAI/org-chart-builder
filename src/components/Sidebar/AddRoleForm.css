@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -13,12 +13,13 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .add-role-button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(71, 85, 105, 0.3);
 }
 
 .add-role-button:active {

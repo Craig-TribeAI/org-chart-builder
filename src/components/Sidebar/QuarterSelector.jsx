@@ -3,7 +3,7 @@ import { useOrgChartStore } from '../../stores/orgChartStore';
 import { getPersonCountsByQuarter } from '../../utils/roleExpander';
 import './QuarterSelector.css';
 
-const QUARTERS = ['Q1', 'Q2', 'Q3', 'Q4', 'Full Year'];
+const QUARTERS = ['Q1', 'Q2', 'Q3', 'Q4'];
 
 function QuarterSelector() {
   const { selectedQuarter, setSelectedQuarter, roleTemplates } = useOrgChartStore();
@@ -30,14 +30,6 @@ function QuarterSelector() {
           </option>
         ))}
       </select>
-
-      {personCounts[selectedQuarter] && (
-        <div className="quarter-info">
-          <span className="quarter-badge">
-            {personCounts[selectedQuarter]} person nodes active
-          </span>
-        </div>
-      )}
     </div>
   );
 }

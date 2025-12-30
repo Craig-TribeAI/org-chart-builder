@@ -1,25 +1,25 @@
 import { Handle, Position } from 'reactflow';
-import { User, Crown, Plus, Minus } from 'lucide-react';
-import { useOrgChartStore } from '../../stores/orgChartStore';
+import { User, Crown, Plus } from 'lucide-react';
 import './CustomNode.css';
 
 function CustomNode({ data }) {
-  const { person, department, isManager, displayName, roleName, isCollapsed, directReportsCount } = data;
-  const { toggleNodeCollapse } = useOrgChartStore();
+  const { person, department, isManager, displayName } = data;
   const isCustom = person?.isCustom || false;
+  const isFutureRole = person?.isFutureRole || false;
+  const startQuarter = person?.startQuarter;
 
-  const handleToggleCollapse = (e) => {
-    e.stopPropagation();
-    toggleNodeCollapse(person.id);
-  };
+  // Determine if we should show the start quarter badge
+  // Show if role starts in a different quarter than Q1
+  const showStartQuarter = startQuarter && startQuarter !== 'Q1' && !isCustom;
 
   return (
     <div
-      className={`custom-node ${isCustom ? 'custom-role' : ''}`}
+      className={`custom-node ${isCustom ? 'custom-role' : ''} ${isFutureRole ? 'future-role' : ''}`}
       style={{
         borderColor: isCustom ? '#8B5CF6' : (department?.color || '#6B7280'),
         borderLeftWidth: 4,
-        borderLeftStyle: 'solid'
+        borderLeftStyle: 'solid',
+        opacity: isFutureRole ? 0.5 : 1
       }}
     >
       <Handle
@@ -50,30 +50,17 @@ function CustomNode({ data }) {
         {isCustom && (
           <div className="node-badge custom-badge">Custom Role</div>
         )}
+        {isFutureRole && (
+          <div className="node-badge future-badge">Starts {startQuarter}</div>
+        )}
+        {showStartQuarter && !isFutureRole && (
+          <div className="node-badge quarter-badge">Hired {startQuarter}</div>
+        )}
         {isManager && !isCustom && (
           <div className="node-badge manager-badge">Manager</div>
         )}
       </div>
 
-      {isManager && (
-        <button
-          className="collapse-button"
-          onClick={handleToggleCollapse}
-          title={isCollapsed ? `Expand ${directReportsCount} direct reports` : `Collapse ${directReportsCount} direct reports`}
-        >
-          {isCollapsed ? (
-            <>
-              <Plus size={14} />
-              <span>{directReportsCount}</span>
-            </>
-          ) : (
-            <>
-              <Minus size={14} />
-              <span>{directReportsCount}</span>
-            </>
-          )}
-        </button>
-      )}
 
       <Handle
         type="source"

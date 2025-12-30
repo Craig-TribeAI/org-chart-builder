@@ -98,6 +98,36 @@
   color: #6b21a8;
 }
 
+.quarter-badge {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.future-badge {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+
+/* Future role (not yet hired) styling */
+.custom-node.future-role {
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 10px,
+    #f8fafc 10px,
+    #f8fafc 20px
+  );
+  border-style: dashed;
+}
+
+.custom-node.future-role .node-name {
+  color: #64748b;
+}
+
+.custom-node.future-role .node-dept {
+  opacity: 0.7;
+}
+
 /* Custom role special styling */
 .custom-node.custom-role {
   background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);

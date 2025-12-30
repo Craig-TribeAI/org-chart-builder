@@ -10,13 +10,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
-  background-color: #f8fafc;
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .manager-assignment-header:hover {
-  background-color: #f1f5f9;
+  background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
 }
 
 .header-title {
@@ -25,7 +25,11 @@
   gap: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #1e293b;
+  color: white;
+}
+
+.manager-assignment-header svg {
+  color: white;
 }
 
 .unassigned-badge {

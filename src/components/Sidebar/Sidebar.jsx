@@ -29,8 +29,6 @@ function Sidebar() {
 
         <QuarterSelector />
 
-        <AddRoleForm />
-
         <div className="sidebar-section">
           <h4>Departments</h4>
           <div className="department-list">
@@ -56,6 +54,8 @@ function Sidebar() {
           <BarChart3 size={16} />
           <span>View Manager Breakdown</span>
         </button>
+
+        <AddRoleForm />
       </div>
 
       <ManagerBreakdown isOpen={showBreakdown} onClose={() => setShowBreakdown(false)} />
