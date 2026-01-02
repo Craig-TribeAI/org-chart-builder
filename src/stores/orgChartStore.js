@@ -525,8 +525,8 @@ export const useOrgChartStore = create(
       /**
        * Add a custom role (not from CSV)
        */
-      addCustomRole: (roleName, departmentId) => {
-        const { departments, personNodes } = get();
+      addCustomRole: (roleName, departmentId, managerId = null) => {
+        const { departments, personNodes, managerAssignments } = get();
         const dept = departments.find(d => d.id === departmentId);
 
         if (!dept) {
@@ -537,6 +537,15 @@ export const useOrgChartStore = create(
         // Generate unique ID for custom role
         const customId = `custom-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 
+        // Validate manager if provided
+        if (managerId) {
+          const managerExists = personNodes.some(p => p.id === managerId);
+          if (!managerExists) {
+            set({ error: 'Invalid manager' });
+            return false;
+          }
+        }
+
         const newPersonNode = {
           id: customId,
           templateId: null, // No template for custom roles
@@ -544,7 +553,7 @@ export const useOrgChartStore = create(
           displayName: roleName,
           department: dept.name,
           departmentId: dept.id,
-          managerId: null,
+          managerId: managerId,
           position: { x: 0, y: 0 },
           activeInQuarters: ['Q1', 'Q2', 'Q3', 'Q4'],
           isCustom: true, // Mark as custom role
@@ -557,8 +566,14 @@ export const useOrgChartStore = create(
           }
         };
 
+        // Update manager assignments if manager is set
+        const newAssignments = managerId
+          ? { ...managerAssignments, [customId]: managerId }
+          : managerAssignments;
+
         set(state => ({
           personNodes: [...state.personNodes, newPersonNode],
+          managerAssignments: newAssignments,
           error: null
         }));
 

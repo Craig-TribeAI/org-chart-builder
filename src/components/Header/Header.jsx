@@ -1,4 +1,4 @@
-import { Users, Calendar, Download, Upload } from 'lucide-react';
+import { Users, Calendar, Download, Upload, RotateCcw } from 'lucide-react';
 import { useOrgChartStore } from '../../stores/orgChartStore';
 import './Header.css';
 
@@ -11,6 +11,13 @@ function Header() {
     importFromJSON,
     error
   } = useOrgChartStore();
+
+  const handleReset = () => {
+    if (window.confirm('Are you sure you want to reset? This will clear all changes and reload the default data.')) {
+      localStorage.removeItem('org-chart-storage');
+      window.location.reload();
+    }
+  };
 
   const handleExport = () => {
     const data = useOrgChartStore.getState().exportToJSON();
@@ -86,6 +93,11 @@ function Header() {
               <button className="export-button" onClick={handleExport}>
                 <Download size={18} />
                 <span>Export</span>
+              </button>
+
+              <button className="reset-button" onClick={handleReset} title="Reset to default data">
+                <RotateCcw size={18} />
+                <span>Reset</span>
               </button>
             </>
           )}
