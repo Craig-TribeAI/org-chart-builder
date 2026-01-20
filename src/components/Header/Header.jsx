@@ -1,5 +1,6 @@
 import { Users, Calendar, Download, Upload, RotateCcw } from 'lucide-react';
 import { useOrgChartStore } from '../../stores/orgChartStore';
+import CommandInput from '../CommandInput/CommandInput';
 import './Header.css';
 
 function Header() {
@@ -85,6 +86,8 @@ function Header() {
         <div className="header-right">
           {csvFileName && (
             <>
+              <CommandInput />
+
               <button className="import-button" onClick={handleImport} title="Import saved data">
                 <Upload size={18} />
                 <span>Import</span>

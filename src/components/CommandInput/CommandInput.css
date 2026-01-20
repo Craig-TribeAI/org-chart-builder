@@ -1,0 +1,356 @@
+/* Command Input Toggle Button */
+.command-input-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
+}
+
+.command-input-toggle:hover {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Command Input Container */
+.command-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.command-input-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.command-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.command-input-wrapper:focus-within {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.command-input-wrapper .command-icon {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.command-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  color: #1e293b;
+  background: transparent;
+  min-width: 250px;
+}
+
+.command-input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+.command-input-wrapper input:disabled {
+  color: #64748b;
+}
+
+.clear-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.clear-button:hover {
+  color: #64748b;
+  background-color: #f1f5f9;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.collapse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  background: #f1f5f9;
+  color: #64748b;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.collapse-button:hover {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+/* Command Status Messages */
+.command-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.command-status.processing {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+
+.command-status.success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.command-status.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  white-space: pre-wrap;
+}
+
+.command-status span {
+  flex: 1;
+}
+
+.command-status button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+  color: inherit;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: opacity 0.2s;
+}
+
+.command-status button:hover {
+  opacity: 1;
+}
+
+/* Spinning animation */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Command Preview Modal Styles */
+.command-preview-modal {
+  max-width: 500px;
+}
+
+.command-preview-modal .command-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.command-preview-modal .command-icon.safe {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.command-preview-modal .command-icon.destructive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.warning-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background-color: #fef3c7;
+  color: #92400e;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.command-description {
+  margin-bottom: 1rem;
+}
+
+.command-description p {
+  margin: 0;
+  font-size: 1rem;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+.affected-count {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #f1f5f9;
+  color: #475569;
+  border-radius: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.command-details {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.command-details h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.command-details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.command-details li {
+  padding: 0.375rem 0;
+  font-size: 0.875rem;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.command-details li:last-child {
+  border-bottom: none;
+}
+
+/* Modal Footer Buttons */
+.command-preview-modal .modal-footer {
+  gap: 0.75rem;
+}
+
+.cancel-button {
+  padding: 0.625rem 1.25rem;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background-color: #e2e8f0;
+}
+
+.cancel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.confirm-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.confirm-button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.confirm-button.destructive {
+  background-color: #dc2626;
+}
+
+.confirm-button.destructive:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+.confirm-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .command-input-wrapper input {
+    min-width: 150px;
+  }
+
+  .command-input-toggle span {
+    display: none;
+  }
+}

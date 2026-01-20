@@ -50,9 +50,6 @@ function Login({ onLogin }) {
           </button>
         </form>
 
-        <div className="login-footer">
-          <p className="password-hint">Default password: tr!be2026</p>
-        </div>
       </div>
     </div>
   );
